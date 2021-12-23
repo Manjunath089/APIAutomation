@@ -1,0 +1,68 @@
+Request method:	POST
+Request URI:	http://10.160.160.3:8001/bc/webresources/v1.0/installmentManagement/v1/installmentSchedule/addInstallmentSchedule
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Cookie=BC_JSESSIONID=XOv55qYp14903s0mqTxWCX-oyrpxRnWKbxhNc1zKwaVJ9RMcvdGl!1808549568
+				X-XSRF-TOKEN=XOv55qYp14903s0mqTxWCX-oyrpxRnWKbxhNc1zKwaVJ9RMcvdGl!1808549568-1623395313514
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "status": "OPEN",
+    "totalInstallments": 2,
+    "billPreference": "IMMEDIATE",
+    "customerRef": "0.0.0.1+-account+533748+0",
+    "billProfileRef": "0.0.0.1+-billinfo+535284+0",
+    "scheduleSpecRef": "0.0.0.1+-config-installment-schedule_spec+500010",
+    "validFor": [
+        {
+            "startDateTime": 1624320160414,
+            "endDateTime": 1624838560414
+        }
+    ],
+    "totalAmount": [
+        {
+            "amount": 500.0,
+            "currency": "USD"
+        }
+    ],
+    "bills": [
+        {
+            "billId": "0.0.0.1+-bill+57879+7"
+        }
+    ],
+    "installments": [
+        {
+            "status": "OPEN",
+            "dueDate": 1630108960414,
+            "amount": [
+                {
+                    "amount": 250.0,
+                    "currency": "USD"
+                }
+            ]
+        }
+    ]
+}
+HTTP/1.1 405 Method Not Allowed
+Date: Fri, 11 Jun 2021 07:08:34 GMT
+Content-Length: 18
+Content-Type: text/html; charset=UTF-8
+X-ORACLE-DMS-RID: 0
+X-FRAME-OPTIONS: SAMEORIGIN
+Strict-Transport-Security: max-age=31622400
+Referrer-Policy: origin
+Allow: GET,OPTIONS,PATCH
+X-Content-Type-Options: nosniff
+X-ORACLE-DMS-ECID: a02080fd-a22f-46ac-a7a7-dd22a7f1a99f-00000387
+X-XSS-Protection: 1; mode=block
+Expect-CT: enforce
+
+<html>
+  <body>Method Not Allowed</body>
+</html>

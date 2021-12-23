@@ -1,0 +1,149 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-11T07:08:29.932Z",
+        "line": 3,
+        "name": "Generating Token",
+        "description": "",
+        "id": "validating-installment-schedule-spec;generating-token",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3501578100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "generating Token",
+            "match": {
+              "location": "stepDefinations.StepDefination.generating_token()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-11T07:08:33.654Z",
+        "line": 15,
+        "name": "Verifying Installment API",
+        "description": "",
+        "id": "validating-installment-schedule-spec;verifying-installment-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 873615500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Creating an Installment \"IMMEDIATE\" \"OPEN\" \"2021-06-22T05:32:40.414Z\"\"2021-06-28T05:32:40.414Z\" 2 500.0 \"USD\" \"0.0.0.1+-account+533748+0\" \"0.0.0.1+-billinfo+535284+0\" \"0.0.0.1+-bill+57879+7\" \"0.0.0.1+-config-installment-schedule_spec+500010\" \"OPEN\" \"2021-08-28T05:32:40.414Z\" 250.0 \"USD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"IMMEDIATE\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"OPEN\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"2021-06-22T05:32:40.414Z\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"2021-06-28T05:32:40.414Z\"",
+                  "offset": 69
+                },
+                {
+                  "val": "2",
+                  "offset": 96
+                },
+                {
+                  "val": "500.0",
+                  "offset": 98
+                },
+                {
+                  "val": "\"USD\"",
+                  "offset": 104
+                },
+                {
+                  "val": "\"0.0.0.1+-account+533748+0\"",
+                  "offset": 110
+                },
+                {
+                  "val": "\"0.0.0.1+-billinfo+535284+0\"",
+                  "offset": 138
+                },
+                {
+                  "val": "\"0.0.0.1+-bill+57879+7\"",
+                  "offset": 167
+                },
+                {
+                  "val": "\"0.0.0.1+-config-installment-schedule_spec+500010\"",
+                  "offset": 191
+                },
+                {
+                  "val": "\"OPEN\"",
+                  "offset": 242
+                },
+                {
+                  "val": "\"2021-08-28T05:32:40.414Z\"",
+                  "offset": 249
+                },
+                {
+                  "val": "250.0",
+                  "offset": 276
+                },
+                {
+                  "val": "\"USD\"",
+                  "offset": 282
+                }
+              ],
+              "location": "stepDefinations.StepDefination.creating_an_installment(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Integer,java.lang.Double,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.Double,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c400\u003e but was \u003c405\u003e.\n\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:92)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$spec(ValidatableResponseImpl.groovy)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:564)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.spec(ValidatableResponseImpl.groovy:76)\r\n\tat io.restassured.internal.ValidatableResponseImpl.spec(ValidatableResponseImpl.groovy)\r\n\tat stepDefinations.StepDefination.api_is_called_with_invalid_inputs(StepDefination.java:90)\r\n\tat ✽.\"Installment\" API is called with invalid inputs(file:///C:/Users/chaithra.muniswamaia/eclipse-workspace/APIFramework2/src/test/java/features/installment.feature:9)\r\n",
+              "duration": 711117400,
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "\"Installment\" API is called with invalid inputs",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Installment\"",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefinations.StepDefination.api_is_called_with_invalid_inputs(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "Validate the 400 code and status in Installment output response",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validating Installment Schedule Spec",
+    "description": "",
+    "id": "validating-installment-schedule-spec",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/installment.feature",
+    "tags": []
+  }
+]
